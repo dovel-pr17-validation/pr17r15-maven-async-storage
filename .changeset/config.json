@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.2/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": ["@changesets/cli/commit", { "skipCI": false }],
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "origin/main",
+  "updateInternalDependencies": "patch",
+  "ignore": [
+    "@react-native-async-storage/eslint-config",
+    "example-react-native",
+    "example-web",
+    "example-common-tests",
+    "example-expo"
+  ]
+}

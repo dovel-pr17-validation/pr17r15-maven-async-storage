@@ -1,0 +1,13 @@
+{
+  "$schema": "https://turborepo.com/schema.v2.json",
+  "tasks": {
+    "test:lint": {},
+    "test:ts": {},
+    "build": {
+      "outputs": ["lib/**"]
+    },
+    "async-storage-website#build": {
+      "outputs": ["build/**"]
+    }
+  }
+}

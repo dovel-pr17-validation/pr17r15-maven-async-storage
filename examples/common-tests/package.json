@@ -1,0 +1,30 @@
+{
+  "name": "example-common-tests",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./app": "./src/App.tsx"
+  },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "scripts": {
+    "test:lint": "eslint .",
+    "test:ts": "tsc"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "workspace:*",
+    "react": "19.0.0"
+  },
+  "devDependencies": {
+    "@react-native-async-storage/eslint-config": "workspace:*",
+    "@types/lodash.isequal": "^4.5.8",
+    "@types/react": "^19.0.0",
+    "eslint": "9.34.0",
+    "lodash.isequal": "4.5.0",
+    "prettier": "3.6.2",
+    "react-native-safe-area-context": "^5.6.1",
+    "typescript": "5.9.2"
+  }
+}
